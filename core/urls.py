@@ -21,6 +21,9 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('text2room', views.index_text2room, name='text2room'),
     path('form', views.get_form, name='get_form'),
     path('submit', views.submit, name='submit'),
+    path('form_text2room', views.get_form_text2room, name='get_form_text2room'),
+    path('submit_text2room', views.submit_text2room, name='submit_text2room'),
 ]
